@@ -22,7 +22,8 @@ class BasicCache(BaseCaching):
             key (str): the key of the item to retrieve.
 
         Returns:
-            any: the item stored in the cache, or None if the key doesn't exist.
+            any: the item stored in the cache,
+            or None if the key doesn't exist.
         """
         if key is None or key not in self.cache_data:
             return None
