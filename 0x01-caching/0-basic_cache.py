@@ -1,8 +1,15 @@
 #!/usr/bin/python3
-from base_caching import BaseCaching
+
+"""Basic Cache class
+
+    Does basic caching tasks like adding
+    and retrieving data
+"""
+BaseCaching = __import__('base_caching').BaseCaching
 
 
 class BasicCache(BaseCaching):
+    """ A cache system """
     def put(self, key, item):
         """
         Add an item in the cache.
